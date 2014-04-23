@@ -195,16 +195,16 @@ ROM(174) <= X"0";
 ROM(175) <= X"0";
 	Read_Enable <=  '0' when(CS_L='0' and R_W = '1') else '1';
 
-	process (Clock)
+	process (Read_Enable)
 	begin
-		if(Clock='0') then
+--		if(Clock='0') then
 			if(Read_Enable = '0') then
 			  Data  <= ROM(conv_integer(Addr));
 		  	else
 			  Data <= "ZZZZ";
 	      	end if;
-		else Data <= "ZZZZ";
-		end if;
+--		else Data <= "ZZZZ";
+--		end if;
 
 	end process;
 
