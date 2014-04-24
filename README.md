@@ -3,6 +3,10 @@ ECE281_Lab5
 
 Lab 5: PRISM
 
+C3C Jasper Arneberg  
+M6A ECE 281  
+Dr. Neebel  
+
 #Program 1
 
 ##Overall Description
