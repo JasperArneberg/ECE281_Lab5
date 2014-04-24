@@ -45,6 +45,23 @@ Here is a flow chart for Program 2:
 
 This program counts with two digits between 0 and 99. Once the end is reached, it wraps back around. When the first switch is on, it counts backwards.
 
+##Questions
+
+###1
+When the current state is FETCH, PCLd is high, IRLd is high, and ACCLd is low.
+
+###2
+If the curretn state is Decode LoAddr and the IR contains OUT, the asserted control signals are MARLoLd and PCLd, and the next state is DIRECT IO EXECUTE.
+
+###3
+The three status signals from the PRISM datapath to the controller are OpSel, PC, and IR.
+
+###4
+It's important that the ACCLd dignal is active during the execution of ADDI because the result of this operation is loaded into the accumulator.
+
+###5
+The ALU would have to be modified. The best way to do this would be to replace an operation like ROR with SUBI. This way, the OpSel code could remain 3 bits long.
+
 #Demonstrations
 | Functionality | Witness | Date | Time |
 | :--: | :--: | :--: | :----: |
